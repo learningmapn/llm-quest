@@ -1,0 +1,44 @@
+# llm-quest — dependencies
+# Xem docs/REQUIREMENTS.md để biết gói nào phục vụ level nào.
+# Cài đặt: pip install -r requirements.txt
+
+# --- core ---
+numpy>=1.26
+scipy>=1.11
+pandas>=2.1
+matplotlib>=3.8
+scikit-learn>=1.4
+sympy>=1.12
+tqdm>=4.66
+jupyter>=1.0
+ipykernel>=6.29
+notebook>=7.0
+
+# --- torch (level 3+) ---
+torch>=2.2
+torchvision>=0.17
+
+# --- huggingface (level 5+) ---
+transformers>=4.40
+tokenizers>=0.19
+datasets>=2.18
+accelerate>=0.29
+
+# --- embeddings & retrieval (level 6, 8) ---
+sentence-transformers>=2.7
+faiss-cpu>=1.8
+
+# --- fine-tuning (level 7) ---
+peft>=0.10
+
+# --- agents & ops (level 8, 9) ---
+pydantic>=2.6
+jinja2>=3.1
+rich>=13.7
+python-dotenv>=1.0
+
+# --- dev / lint (optional) ---
+nbqa>=1.8
+ruff>=0.4
+black>=24.3
+papermill>=2.6
